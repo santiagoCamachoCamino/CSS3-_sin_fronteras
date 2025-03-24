@@ -1,0 +1,45 @@
+body{
+    color: tomato;
+}
+/* Podemos accder mediante su etiqueta */
+h1{
+    color:blue;
+}
+p{
+    color: blueviolet;
+}
+/* Podemos acceder también con su id */
+#titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Podemos acceder mediante el nombre de su clase */
+.texto{
+    font-weight: bold;
+}
+/* Ahora vamos indicarle que queremos seleccionar las etiquetas de p que solo contengan
+    la clase de texto */
+p.texto{
+    color: chocolate;
+}
+/* Dependiendo del orden que hayamos declarado nuestros selectores, el último siempre se va
+    sobreponer a lo que hemos escrito antes*/
+p.especial{
+    color: mediumspringgreen;
+}
+/* Ahora vamos indicar que todas las etiquetas de p que se encuentran dentro de un div
+    apliquen los siguientes estilos */
+div p{
+    /* Lo que le estamos diciendo que en todas las etiquetas de div y que deriven a una p
+        se apliquen lo siguiente*/
+    color: aquamarine;
+}
+/* Le podemos pasar más de una etiqueta */
+div h2, div h3{
+    color: brown;
+}
+/* Para seleccionar todos los elementos '*' es un selector universal, pero este solo va modificar
+    las propiedades que no hayan sido definidas por otros selectores*/
+*{
+    font-size: 24px;
+    color: black;
+}

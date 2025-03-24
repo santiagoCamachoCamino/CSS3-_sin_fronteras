@@ -41,5 +41,98 @@ div h2, div h3{
     las propiedades que no hayan sido definidas por otros selectores*/
 *{
     font-size: 24px;
-    color: black;
+    /* color: black; */
+}
+
+.color{
+    /* Valor hexagecimal para color */
+    /* color: #00ff00 ; */
+    /* Valor RGB para color */
+    color: rgb(0, 255, 255);
+    /* border: 5px black solid; */
+    /* 
+        Tenemos las siguientes opciones para border
+        dotted double groove hidden
+        dashed ridge  inset
+        solid  outset none
+
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    /* Unidades de Medida */
+    /* border-width: 1cm; centimetros */
+    /* border-width: 5mm; milimitros */
+    /* border-width: 1in; pulgadas */
+    /* border-width: 1px; pixel */
+    /* border-width: 1pt; puntos */
+    /* border-width: 1pc; picas  */
+    /* border-width: 2em; dos veces el tamño de la fuente que se esta utilizando */
+    /* border-width: 2rem; es relativo al tamaño de la fuente del elemento
+        raíz(html) */
+   
+}
+#fondo{
+    background-color: rgb(255, 0, 0);
+    /* Opacity le da una transparencia al elemento completo */
+    /* opacity: 0.3; */
+    background-image: url(1337543.png);
+    height: 400px;
+    /* Permite redimencionar la imagen de fondo y puede recibir distintos valores */
+    /* background-size: auto; Detecta el tamaño que este debe de tener de maner
+        automática*/
+    /* background-size: cover;  La imagen utiliza todo el ancho que tiene dispoble */
+    /* background-size: contain; contiene la imagen dentro de las dimensiones que
+        nosotros le especifiquemos*/
+    /* background-repeat: no-repeat; no repite la imagen */
+    /* background-repeat: repeat-x; se repite la imagen solo en el eje horizontal */
+    /* background-repeat: repeat-y; se repite de manera vertical */
+    /* background-position: center top; Para ubicar el fondo */
+    /* Una manera corta de colocoar los anteriores valores */
+    background: #f00 url(1337543.png) repeat-y center bottom /400px 200px;
+    /* Tenemos que colocar la propiedad backgroun primero y despues sus derivados */
+    /* background-size: 400px 200px; */
+
+}
+
+.margen{
+    background-color: chocolate;
+    /* margin: top, right, bottom, left */
+    margin: 15px 20px 25px 30px;
+    /* padding: top, right, bottom, left */
+    padding: 30px 25px 20px 15px;
+    border: solid 1px black;
+    height: 200px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+.text{
+    font-family: 'Boldonse', sans-serif;
+    text-align: center;
+    text-decoration: line-through;
+    /* text shadow: right botom blur color */
+    text-shadow: 3px 5px 5px blue;
+}
+/* Cuando el link no ha sido visitado */
+a:link{
+    color: blueviolet;
+}
+/* cuando el link ya fue visitado */
+a:visited{
+    color: gray;
+}
+/* cuando pasamos el cursor por encima */
+a:hover{
+    color: yellow;
+}
+/* cuando damos click  */
+a:active{
+    color: red;
+}
+ul{
+    background-color: cyan;
+    list-style-type: georgian;
+    /* padding-left: 0; */
+    /* list-style-position: inside; */
 }

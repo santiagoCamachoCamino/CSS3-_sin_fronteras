@@ -136,3 +136,80 @@ ul{
     /* padding-left: 0; */
     /* list-style-position: inside; */
 }
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+th, td{
+    border: solid 1px #eee;
+    padding: 5px;
+}
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+span{
+    /* Los elementos ocupan todo un bloque o sea todo el ancho de la pantalla, por lo qeu habra un
+    salto de línea */
+    display: block;
+    /* display: none; ocultar elementos */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: cadetblue;
+}
+.inline{
+    /* Los el bloque solo ocupara el espacio que hay dentro del contenido, por lo que no habrá un
+    salto de linea, os que tienen un displan inline son los span, links y las img */
+    display: inline;
+}
+
+#position{
+    /* position: static; por default */
+    /* position: relative; es relativa en donde puede estar posicionado este elemento */
+    /* position: fixed; nos indica que tiene que tener una posición con respecto a lo que nosotros
+    estamos viendo en el explorador   */
+    /* position: absolute; este se va posicionar relativo al elemento padre más cercano */
+    /* position: sticky; es una mezcla entre relative y fixed */
+    left:20px;
+}
+
+.left{
+    float: left;
+    width: 100px;
+}
+.right{
+    float: right;
+}
+.container{
+    height: 200px;
+}
+.column{
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block{
+    /* A los elementos inline no se les puede agregar ancho u altura, con inline block, puedes 
+    agregar esto, pero con la caracterisitca que se comportan de manera inline*/
+    display: inline-block;
+    height: 55px;
+    background-color: aqua;
+}
+.center{
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
